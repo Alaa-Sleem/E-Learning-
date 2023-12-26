@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Diphylleia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Admin</title>
+</head>
+<body>
+
+
+    <nav class="navbar-nav  ">
+      
+        <div class=" d-flex  flex-column justify-content-between Side-Nav  align-items-center ">
+            <div class=" justify-content-center align-items-center p-4 "> 
+                <a class="text-white" href="Index.html"> New Brains</a>
+              </div>
+            <div class="list-group ">
+                        
+                <ul class="navbar-nav  ">
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html"><i class="fa-solid fa-upload p-1 "></i>   Add Video</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#Subject"><i class="fa-solid fa-add p-1"></i>  Add Teacher</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#teacher"><i class="fa-solid fa-user-check"></i> Manage Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teacher"><i class="fa-solid fa-gears"></i> Manage Admins</a>
+                </li>
+            
+    
+    
+              </ul>
+                </div>
+
+                <div class="list-group me-auto">
+                      
+                    <ul class="navbar-nav  ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home"><i class="fa-solid fa-user"></i> Profile</a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home"><i class="fa-solid fa-gear"></i> Settings</a>
+                    </li>
+        
+                   
+        
+        
+                  </ul>
+                    </div>
+
+
+        </div>
+
+    </nav>
+
+    <main >
+ 
+        <nav class="navbar navbar-expand-sm navbar-light  bg-light">
+         <div class="container">
+             <a href="Index.html"  class="navbar-brand w-25 m-0 p-0 ">
+                 <img src="images/9902346.jpg"  class="img-fluid rounded-circle w-25">
+                <span class="p-2"> Admin Name</span>
+             </a>
+             <button
+                 class="navbar-toggler d-lg-none"
+                 type="button"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#collapsibleNavId"
+                 aria-controls="collapsibleNavId"
+                 aria-expanded="false"
+                 aria-label="Toggle navigation"
+             >
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="collapsibleNavId">
+                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                     <a href="#" class="">
+                         <button class="btn btn-info" >Log Out</button>
+                     </a>
+ 
+                    </li>
+                 </ul>
+               
+             </div>
+         </div>
+        </nav>
+      
+ 
+ 
+             <section id="Subject" class=" vh-100">
+                 <div class="container "> 
+                  
+                     <div class=" p-5 ">
+                         <div class=" d-flex flex-column">
+
+                            <h3 class="p-3"><i class="fa-solid fa-video"></i> Add Video</h3>
+
+                            <form class=" d-flex flex-column p-5 justify-content-between">
+                                <select name="Grade" id="Select" class=" form-select m-3 ">
+                                    <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                    <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                    <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                    <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
+            
+                                    <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                    <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                    <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                                </select>
+
+                                <select name="Subject" id="Select" class="m-3 form-select  ">
+                                    <option class="text-opacity-25" value="_____">_Subject _</option>
+                                    <option value="Grade 1 ">Math</option>
+                                    <option value="Grade 1 ">bio</option>
+                                    <option value="Grade 1 ">Arabic</option>
+                                    <option value="Grade 1 ">English</option>
+                                </select>
+
+                                <select name="teacher" id="Select" class="m-3 form-select ">
+                                    <option class="text-opacity-25" value="_____">_ Teacher_</option>
+                                    <option value="Grade 1 ">Teacher 1</option>
+                                    <option value="Grade 1 ">Teacher 2</option>
+                                    <option value="Grade 1 ">Teacher 3</option>
+        
+                                </select>
+
+                                <select name="Semester" id="Select" class="m-3 form-select ">
+                                    <option class="text-opacity-25" value="_____">_ Semester</option>
+                                    <option value="Grade 1 ">Semester 1</option>
+                                    <option value="Grade 1 ">semester 2</option>
+                                 
+                                </select>
+                                <input type="file" name="Video" class="form-control m-3" id="">
+
+            
+                                <div class="Slogen mt-4">
+                            
+                                    <div class="mt-5 ">
+                                        <a href="#"><button class="btn ">Upload</button></a>
+                                        
+                                       </div>
+                             
+                               </div>
+                            </form>
+                          
+                  
+                      </div>
+ 
+ 
+                     
+                 </div>
+               
+ 
+                 <hr>
+             </section>
+
+
+
+             <section id="Teacher" class=" vh-100">
+                <div class="container "> 
+                 
+                    <div class=" p-5 ">
+                        <div class=" d-flex flex-column">
+
+                           <h3 class="p-3"><i class="fa-solid fa-user-tie"></i> Add Teacher </h3>
+
+                           <form class=" d-flex flex-column p-5 justify-content-between">
+
+                            <input type="text" value="Name" class="form-control m-3"> 
+
+                              
+                               <select name="Grade" id="Select" class=" form-select m-3 ">
+                                   <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                   <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                   <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                   <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
+           
+                                   <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                   <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                   <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                               </select>
+
+                               <select name="Subject" id="Select" class="m-3 form-select  ">
+                                   <option class="text-opacity-25" value="_____">_Subject _</option>
+                                   <option value="Grade 1 ">Math</option>
+                                   <option value="Grade 1 ">bio</option>
+                                   <option value="Grade 1 ">Arabic</option>
+                                   <option value="Grade 1 ">English</option>
+                               </select>
+
+
+           
+                               <div class="Slogen mt-4">
+                           
+                                   <div class="mt-5 ">
+                                       <a href="#"><button class="btn ">Add</button></a>
+                                       <a href="#"><button class="btn ">Delete</button></a>
+
+                                       
+                                      </div>
+                                      
+                            
+                              </div>
+                           </form>
+                         
+                 
+                     </div>
+
+
+                    
+                </div>
+              
+
+                <hr>
+            </section>
+
+
+            
+            <section id="Users" class=" vh-100">
+                <div class="container "> 
+                 
+                    <div class=" p-5 ">
+                        <div class=" d-flex flex-column">
+
+                           <h3 class="p-3"><i class="fa-solid fa-user-check"></i> Manage Users </h3>
+
+                           <form class=" d-flex flex-column p-5 justify-content-between">
+
+                            <input type="text" value="Name" class="form-control m-3"> 
+
+                            <input type="email" value="Email" class="form-control m-3"> 
+
+
+                              
+                               <select name="Grade" id="Select" class=" form-select m-3 ">
+                                   <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                   <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                   <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                   <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
+           
+                                   <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                   <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                   <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                               </select>
+
+
+           
+                               <div class="Slogen mt-4">
+                           
+                                   <div class="mt-5 ">
+                                       <a href="#"><button class="btn ">Add</button></a>
+                                       <a href="#"><button class="btn ">Delete</button></a>
+
+                                       
+                                      </div>
+                                      
+                            
+                              </div>
+                           </form>
+                         
+                 
+                     </div>
+
+
+                    
+                </div>
+              
+
+                <hr>
+            </section>
+
+
+
+            <section id="Admin" class=" vh-100">
+                <div class="container "> 
+                 
+                    <div class=" p-5 ">
+                        <div class=" d-flex flex-column">
+
+                           <h3 class="p-3"><i class="fa-solid fa-user-tie"></i> Manage Admins </h3>
+
+                           <form class=" d-flex flex-column p-5 justify-content-between">
+
+                            <input type="text" value="Name" class="form-control m-3"> 
+
+                            <input type="email" value="Email" class="form-control m-3"> 
+
+
+                              
+                               <select name="Grade" id="Select" class=" form-select m-3 ">
+                                   <option class="text-opacity-25" value="_____">_ Roles _</option>
+                                   <option value="Grade 1 ">Role 1</option>
+                                   <option value="Grade 1 ">Role 2</option>
+                                   <option value="Grade 1 ">Role 3</option>
+           
+                                
+                               </select>
+
+
+           
+                               <div class="Slogen mt-4">
+                           
+                                   <div class="mt-5 ">
+                                       <a href="#"><button class="btn ">Add</button></a>
+                                       <a href="#"><button class="btn ">Delete</button></a>
+
+                                       
+                                      </div>
+                                      
+                            
+                              </div>
+                           </form>
+                         
+                 
+                     </div>
+
+
+                    
+                </div>
+              
+
+                <hr>
+            </section>
+ 
+          
+ 
+        
+        
+ 
+     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

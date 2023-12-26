@@ -1,0 +1,202 @@
+:root
+{
+    --blue:#0077b6;
+    --white:#ffffff ; 
+    --darkBlue:#001d3d;
+    --lightBlue :#023e8a;
+    --gray:#dee2e6;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.TeaxtColor
+{
+   color: var(--blue);
+}
+
+.bg-gray
+{
+    background-color: var(--gray);
+}
+
+.bg-darkBlue
+{
+    background-color: var(--darkBlue);
+}
+
+/* nav */
+
+
+.nav-item button  
+{
+    background-color: var(--blue) !important;
+}
+
+
+
+.nav-item   button:hover 
+{
+    background-color: var(--white) !important;
+    border: solid 2px var(--lightBlue);
+    color: black;
+}
+
+
+.nav-item  button a
+{
+    color: var(--white);
+}
+
+.nav-item  button a:hover
+{
+    color: var(--darkBlue);
+}
+
+.navbar-nav .nav-link:hover
+{
+    border-bottom: solid 1.5px  var(--darkBlue);
+}
+
+.SpecialText 
+{
+    font-family: "Diphylleia" , sans-serif;
+}
+
+
+
+/* Home */
+.Slogen button:hover 
+{
+    background-color: var(--white) !important;
+    border: solid 2px var(--lightBlue);
+    color: var(--darkBlue)
+ 
+}
+
+
+
+.Slogen button 
+{
+    background-color: var(--blue) !important;
+    color: var(--white);
+
+}
+
+
+
+
+
+.btn-info
+{
+    background-color: var(--blue) !important;
+    color: var(--white);
+   
+}
+
+/* Teachers  */
+.Size
+{
+    font-size: medium;
+}
+
+
+
+/* Grades Page --- Side Nav */
+.Side-Nav
+{
+    
+    position: fixed;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    padding: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: auto;
+    width: 250px;
+    
+
+}
+
+main
+{
+    margin-left: 250px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+ .grow:hover {
+    transform: scale(1.03);
+}
+
+.card:hover
+{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Add this to the end of your existing CSS */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .Side-Nav {
+        width: 150px; /* Adjust the width for smaller screens */
+    }
+
+    main {
+        margin-left: 150px; /* Adjust the margin for smaller screens */
+    }
+
+    .navbar-brand {
+        width: 50%; /* Adjust the width of the brand logo for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .Side-Nav {
+        width: 70px; /* Adjust the width for even smaller screens */
+    }
+
+    main {
+        margin-left: 70px; /* Adjust the margin for even smaller screens */
+    }
+
+    .navbar-brand {
+        width: 70%; /* Adjust the width of the brand logo for even smaller screens */
+    }
+}
+
+
+/* Your existing styles */
+
+/* Additional styles for responsiveness */
+@media (max-width: 576px) {
+    .card-group .card {
+        width: 100%; /* Make cards full width on extra small screens */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .card-group .card {
+        width: 48%; /* Two cards per row on small screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .card-group .card {
+        width: 31%; /* Three cards per row on medium screens */
+    }
+}
+
+/* Add more media queries as needed for larger screens */
+
+
+
+
