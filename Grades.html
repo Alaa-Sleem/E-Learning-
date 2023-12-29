@@ -12,286 +12,276 @@
 <body >
 
 
-    <nav class="navbar-nav ">
+  
+
+  
+
+
+
+    <div class="container-fluid p-0 d-flex h-100 "> 
+
+
       
-        <div class="d-flex flex-column justify-content-between align-items-center Side-Nav">
-            <div class=" justify-content-center align-items-center p-4 "> 
-                <a class="text-white" href="Index.html"> New Brains</a>
-              </div>
+      <div id="bdSidebar"  class="d-flex flex-column  flex-shrink-0 p-3 bg-dark text-white offcanvas-md   offcanvas-start"> 
+          <a href="index.html" class="navbar-brand w-25  "> Grade 7(اولي اعدادي)</a> <hr> 
+          <ul class="mynav nav nav-pills flex-column mb-auto"> 
+              <li class="nav-item mb-1"> 
+                  <a href="#"> 
+                      <i class="fa-solid fa-user"></i> 
+                      User Name 
+                  </a> 
+              </li> 
 
-            <div class="list-group">
-                        
-                <ul class="navbar-nav  ">
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="Index.html"><i class="fa-solid fa-home"></i> Home</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="#Subject"><i class="fa-solid fa-book"></i> Subjects</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="#teacher"><i class="fa-solid fa-chalkboard-teacher"></i> Teachers</a>
-                </li>
-    
-    
-              </ul>
-                </div>
+              <li class="nav-item mb-1"> 
+                  <a href="#Subjects" id="nav-link-Subject" > 
+                      <i class="fa-solid fa-book-open"></i> 
+                      Subjects 
+             
+                  </a> 
+              </li> 
+              <li class="nav-item mb-1"> 
+                  <a href="#Teachers" id="nav-link-Teachers"> 
+                      <i class="fa-solid fa-chalkboard-teacher"></i> 
+                      Teachers 
+                  </a> 
+              </li> 
 
-                <div class="list-group me-auto">
-                      
-                    <ul class="navbar-nav  ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-user"></i> Profile</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-gear"></i> Settings</a>
-                    </li>
-        
-                   
-        
-        
-                  </ul>
-                    </div>
+              <li class="sidebar-item nav-item mb-1"> 
+                  <a href="#"
+                  class="sidebar-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#settings"
+                  aria-expanded="false"
+                  aria-controls="settings"> 
+                      <i class="fas fa-cog pe-2"></i> 
+                      <span class="topic">Settings </span> 
+                  </a> 
+                  <ul id="settings"
+                      class="sidebar-dropdown list-unstyled collapse"
+                      data-bs-parent="#sidebar"> 
+                     
+                      <li class="sidebar-item"> 
+                          <a href="#" class="sidebar-link"> 
+                              <i class="fas fa-user-edit pe-2"></i> 
+                              <span class="topic">Edit Profile</span> 
+                          </a> 
+                      </li> 
+                      <li class="sidebar-item"> 
+                          <a href="#" class="sidebar-link"> 
+                              <i class="fas fa-sign-out-alt pe-2"></i> 
+                              <span class="topic">Log Out</span> 
+                          </a> 
+                      </li> 
+                  </ul> 
+              </li> 
 
-        </div>
-
-    </nav>
-
-    <main >
- 
-       <nav class="navbar navbar-expand-sm navbar-light  bg-light">
-        <div class="container">
-            <a href="Index.html"  class="navbar-brand w-25 m-0 p-0 ">
-                <img src="images/9902346.jpg"  class="img-fluid rounded-circle w-25">
-               <span class="p-2"> Grade 7(اولي اعدادي) </span>
-            </a>
-            <button
-                class="navbar-toggler d-lg-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="dropdownId"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false">Semester</a
-                        >
-                        <div
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownId"
-                        >
-                            <a class="dropdown-item " href="#"
-                                >Semester 1</a
-                            >
-                            <a class="dropdown-item" href="#"
-                                >Semester 2</a
-                            >
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                   <li class="nav-item">
-                    <a href="#" class="">
-                        <button class="btn btn-info" >Supscripe</button>
-                    </a>
-
-                   </li>
-                </ul>
-              
-            </div>
-        </div>
-       </nav>
-     
-
-
-            <section id="Subject" class=" vh-100">
-                <div class="container "> 
-                 
-                    <div class=" p-5  card-group">
-                        <h3 class="p-3"><i class="fa-solid fa-book"></i> Subjects</h3>
-                        <div class="row card-group  g-5">
-                            <div class="col-md-4  ">
-                              <div class="card grow">
-                                <img src="images/4905784.jpg" class="card-img-top img-fluid" alt=" Movie-monster">
-                                <div class="card-body">
-                                  <h5 class="card-title">Math</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit.</p>
-                                  <a href="#" class="">Explore</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card grow">
-                                  <img src="images/4727487.jpg" class="card-img img-fluid " alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title"> Biology</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit.</p>
-
-                                    <a href="#" >Explore</a>
-                                  </div>
-                                </div>
-                              </div> 
-                            <div class="col-md-4  ">
-                                <div class="card grow">
-                                  <img src="images/42698.jpg" class="card-img-top" alt=" Movie-monster">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Physics</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit.</p>
-
-                                    <a href="#" class="">Explore</a>
-                                  </div>
-                                </div>
-                              </div>
-                          
-                        
-                          </div>
-                 
-                     </div>
-
-
-                    
-                </div>
-              
-
-                <hr>
-            </section>
-
-         
 
             
-            <section id="teacher" class=" vh-100">
-                <div class="container "> 
-                    <div class=" p-5 card-group">
-                        <h3 class="p-3"><i class="fa-solid fa-chalkboard-user"></i> Our Teachers</h3>
-                        <div class="row card-group g-5">
-                            <div class="col-md-4 ">
-                              <div class="card  grow">
-                                <img src="images/4905784.jpg" class="card-img-top img-fluid" alt=" Movie-monster">
-                                <div class="card-body">
-                                  <h5 class="card-title">Teacher Name</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit.</p>
-                                  <a href="#" class="">Explore</a>
-                                </div>
+          </ul> 
+        
+          <div class="d-flex"> 
+
+              <i class="fa-solid fa-book me-2"></i> 
+              <span> 
+                  <h6 class="mt-1 mb-0"> 
+                      Know More About New Brains
+                  </h6> 
+              </span> 
+          </div> 
+      </div> 
+
+
+
+
+
+      <div class="bg-light flex-fill"> 
+          <div class="p-2 d-md-none d-flex text-white bg-dark"> 
+              <a href="#" class="text-white"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#bdSidebar"> 
+                  <i class="fa-solid fa-bars"></i> 
+              </a> 
+          </div> 
+        
+          <div class="p-4"> 
+              <div class="row">
+       
+
+                  <div id="Subjects" class="   col-md-12">
+                      
+                      <div class="container">
+                          <h3 class="p-3"><i class="fa-solid fa-book-open"></i> Subjects</h3>
+
+                           <div class="row d-flex justify-content-evenly ">
+
+                            <div class="card gy-4  col-md-3">
+                              <img class="card-img-top" src="images/4905784.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Math</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
                               </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card grow">
-                                  <img src="images/4727487.jpg" class="card-img img-fluid " alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title"> Teacher Name</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit.</p>
 
-                                    <a href="#" >Explore</a>
-                                  </div>
-                                </div>
-                              </div> 
-                            <div class="col-md-4  ">
-                                <div class="card grow">
-                                  <img src="images/42698.jpg" class="card-img-top" alt=" Movie-monster">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Teacher Name</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit.</p>
-                                    <a href="#" class="">Explore</a>
-                                  </div>
-                                </div>
+                            <div class="card gy-4 col-md-3">
+                              <img class="card-img-top" src="images/42698.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Physics</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
                               </div>
-                          
-                        
+                            </div>
+
+
+                            <div class="card gy-4 col-md-3">
+                              <img class="card-img-top" src="images/4727487.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Bio</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
+                              </div>
+                            </div>
+
+                            
+                            
+
+
+                           </div>
+                           <div class="row d-flex justify-content-evenly ">
+
+                            <div class="card gy-4  col-md-3">
+                              <img class="card-img-top" src="images/4905784.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Math</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
+                              </div>
+                            </div>
+
+                            <div class="card gy-4 col-md-3">
+                              <img class="card-img-top" src="images/42698.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Physics</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
+                              </div>
+                            </div>
+
+
+                            <div class="card gy-4 col-md-3">
+                              <img class="card-img-top" src="images/4727487.jpg" alt="Title" />
+                              <div class="card-body">
+                                <h4 class="card-title">Bio</h4>
+                                <p class="card-text">Lorem ipsum dolor sit.</p>
+                              </div>
+                            </div>
+
+                            
+                            
+
+
+                           </div>
+
+                    
+                         
+                      </div>
+                      
+                      <hr>
+                  </div>
+
+               
+                
+                  <div id="Teachers" class="  col-md-12">
+                      
+                    <div class="container">
+                        <h3 class="p-3"><i class="fa-solid fa-chalkboard-teacher"></i> Teachers</h3>
+
+                         <div class="row d-flex justify-content-evenly ">
+
+                          <div class="card gy-4  col-md-3">
+                            <img class="card-img-top" src="images/4905784.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Math</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
                           </div>
-                 
-                     </div>
+
+                          <div class="card gy-4 col-md-3">
+                            <img class="card-img-top" src="images/42698.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Physics</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
+                          </div>
+
+
+                          <div class="card gy-4 col-md-3">
+                            <img class="card-img-top" src="images/4727487.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Bio</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
+                          </div>
+
+                          
+                          
+
+
+                         </div>
+                         <div class="row d-flex justify-content-evenly ">
+
+                          <div class="card gy-4  col-md-3">
+                            <img class="card-img-top" src="images/4905784.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Math</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
+                          </div>
+
+                          <div class="card gy-4 col-md-3">
+                            <img class="card-img-top" src="images/42698.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Physics</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
+                          </div>
+
+
+                          <div class="card gy-4 col-md-3">
+                            <img class="card-img-top" src="images/4727487.jpg" alt="Title" />
+                            <div class="card-body">
+                              <h4 class="card-title">Bio</h4>
+                              <p class="card-text">Lorem ipsum dolor sit.</p>
+                            </div>
+                          </div>
+
+                          
+                          
+
+
+                         </div>
 
                      
 
+                  
+                       
+                    </div>
                     
+
                 </div>
-              
 
+           
+          
 
-            </section>
-       
+           
+                  
+              </div> 
+          </div> 
 
-    </main>
-
-
+      </div> 
+  </div> 
   
  
      
 
   
 
-            <nav class="Side-Nav col-2 d-flex flex-column  justify-content-between  ">
-                <div class="d-flex justify-content-center align-items-center p-4 "> 
-                    <a class="text-white" href="#Home">  New Brains</a>
-                  </div>
-        
-                <div class=" container  ">
-                  
-        
-                <div class=" d-flex flex-column align-items-center justify-content-center ">
-                    <div class="list-group">
-                        
-                    <ul class="navbar-nav  ">
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-home"></i> Home</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-book-open"></i> Subjects</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-chalkboard-teacher"></i> Teachers</a>
-                    </li>
-        
-        
-                  </ul>
-                    </div>
-                </div>
-        
-        
-              
-        
-                </div>
-        
-             
-                <div class=" d-flex flex-column justify-content-center align-items-start">
-                  
-                    <div class="list-group">
-                      
-                    <ul class="navbar-nav  ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-user"></i> Profile</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-gear"></i> Settings</a>
-                    </li>
-        
-                   
-        
-        
-                  </ul>
-                    </div>
-                </div>
-           
-        
-             </nav> -->
+       
     
 
 

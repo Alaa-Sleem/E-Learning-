@@ -11,100 +11,124 @@
 </head>
 <body>
 
+     <div class="container-fluid p-0 d-flex h-100 "> 
+        <div id="bdSidebar"  class="d-flex flex-column  flex-shrink-0 p-3 bg-dark text-white offcanvas-md   offcanvas-start"> 
+            <a href="index.html" class="navbar-brand w-25  "> <img src="images/9902346.jpg" class=" rounded-circle img-fluid m-1" > Admin Name</a> <hr> 
+            <ul class="mynav nav nav-pills flex-column mb-auto"> 
+                <li class="nav-item mb-1"> 
+                    <a href="#"> 
+                        <i class="fa-solid fa-user"></i> 
+                        Profile 
+                    </a> 
+                </li> 
 
-    <nav class="navbar-nav  ">
-      
-        <div class=" d-flex  flex-column justify-content-between Side-Nav  align-items-center ">
-            <div class=" justify-content-center align-items-center p-4 "> 
-                <a class="text-white" href="Index.html"> New Brains</a>
-              </div>
-            <div class="list-group ">
-                        
-                <ul class="navbar-nav  ">
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="Index.html"><i class="fa-solid fa-upload p-1 "></i>   Add Video</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="#Subject"><i class="fa-solid fa-add p-1"></i>  Add Teacher</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="#teacher"><i class="fa-solid fa-user-check"></i> Manage Users</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#teacher"><i class="fa-solid fa-gears"></i> Manage Admins</a>
-                </li>
-            
-    
-    
-              </ul>
-                </div>
-
-                <div class="list-group me-auto">
-                      
-                    <ul class="navbar-nav  ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-user"></i> Profile</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home"><i class="fa-solid fa-gear"></i> Settings</a>
-                    </li>
-        
-                   
-        
-        
-                  </ul>
-                    </div>
-
-
-        </div>
-
-    </nav>
-
-    <main >
- 
-        <nav class="navbar navbar-expand-sm navbar-light  bg-light">
-         <div class="container">
-             <a href="Index.html"  class="navbar-brand w-25 m-0 p-0 ">
-                 <img src="images/9902346.jpg"  class="img-fluid rounded-circle w-25">
-                <span class="p-2"> Admin Name</span>
-             </a>
-             <button
-                 class="navbar-toggler d-lg-none"
-                 type="button"
-                 data-bs-toggle="collapse"
-                 data-bs-target="#collapsibleNavId"
-                 aria-controls="collapsibleNavId"
-                 aria-expanded="false"
-                 aria-label="Toggle navigation"
-             >
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                     <a href="#" class="">
-                         <button class="btn btn-info" >Log Out</button>
-                     </a>
- 
-                    </li>
-                 </ul>
+                <li class="nav-item mb-1"> 
+                    <a href="#" id="nav-link-add-video" > 
+                        <i class="fa-solid fa-upload"></i> 
+                        Add Video 
                
-             </div>
-         </div>
-        </nav>
-      
- 
- 
-             <section id="Subject" class=" vh-100">
-                 <div class="container "> 
-                  
-                     <div class=" p-5 ">
-                         <div class=" d-flex flex-column">
+                    </a> 
+                </li> 
+                <li class="nav-item mb-1"> 
+                    <a href="#" id="nav-link-delete-video"> 
+                        <i class="fa-solid fa-delete-left"></i> 
+                        Delete Video 
+                    </a> 
+                </li> 
 
+
+                <li class="sidebar-item nav-item mb-1"> 
+                    <a href="#" onclick=""
+                    class="sidebar-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Users"
+                    aria-expanded="false"
+                    aria-controls="Users"> 
+                        <i class="fa-solid fa-user  pe-2"></i> 
+                        <span class="topic">Users </span> 
+                    </a> 
+                    <ul id="Users"
+                        class="sidebar-dropdown list-unstyled collapse"
+                        data-bs-parent="#sidebar"> 
+                       
+                        <li class="sidebar-item"> 
+                            <a href="#" id="nav-link-add-users" class="sidebar-link"> 
+                                <i class="fas fa-user-plus pe-2"></i> 
+                                <span class="topic">Add </span> 
+                            </a> 
+                        </li> 
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link" id="nav-link-delete-users"> 
+                                <i class="fas fa-sign-out-alt pe-2"></i> 
+                                <span class="topic">Delete</span> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </li> 
+
+                <li class="sidebar-item nav-item mb-1"> 
+                    <a href="#"
+                    class="sidebar-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#settings"
+                    aria-expanded="false"
+                    aria-controls="settings"> 
+                        <i class="fas fa-cog pe-2"></i> 
+                        <span class="topic">Settings </span> 
+                    </a> 
+                    <ul id="settings"
+                        class="sidebar-dropdown list-unstyled collapse"
+                        data-bs-parent="#sidebar"> 
+                       
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link"> 
+                                <i class="fas fa-user-plus pe-2"></i> 
+                                <span class="topic">Register</span> 
+                            </a> 
+                        </li> 
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link"> 
+                                <i class="fas fa-sign-out-alt pe-2"></i> 
+                                <span class="topic">Log Out</span> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </li> 
+
+
+              
+            </ul> 
+          
+            <div class="d-flex"> 
+
+                <i class="fa-solid fa-book me-2"></i> 
+                <span> 
+                    <h6 class="mt-1 mb-0"> 
+                        Know More About New Brains
+                    </h6> 
+                </span> 
+            </div> 
+        </div> 
+
+
+
+
+
+        <div class="bg-light flex-fill"> 
+            <div class="p-2 d-md-none d-flex text-white bg-dark"> 
+                <a href="#" class="text-white"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#bdSidebar"> 
+                    <i class="fa-solid fa-bars"></i> 
+                </a> 
+            </div> 
+            <div class="p-4"> 
+                <div class="row">      
+
+
+                    <div id="AddVideo" class=" vh-100 col-md-12">
+                        
+                        <div class="">
                             <h3 class="p-3"><i class="fa-solid fa-video"></i> Add Video</h3>
 
                             <form class=" d-flex flex-column p-5 justify-content-between">
@@ -118,7 +142,7 @@
                                     <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
                                     <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
                                 </select>
-
+    
                                 <select name="Subject" id="Select" class="m-3 form-select  ">
                                     <option class="text-opacity-25" value="_____">_Subject _</option>
                                     <option value="Grade 1 ">Math</option>
@@ -126,7 +150,7 @@
                                     <option value="Grade 1 ">Arabic</option>
                                     <option value="Grade 1 ">English</option>
                                 </select>
-
+    
                                 <select name="teacher" id="Select" class="m-3 form-select ">
                                     <option class="text-opacity-25" value="_____">_ Teacher_</option>
                                     <option value="Grade 1 ">Teacher 1</option>
@@ -134,7 +158,7 @@
                                     <option value="Grade 1 ">Teacher 3</option>
         
                                 </select>
-
+    
                                 <select name="Semester" id="Select" class="m-3 form-select ">
                                     <option class="text-opacity-25" value="_____">_ Semester</option>
                                     <option value="Grade 1 ">Semester 1</option>
@@ -142,207 +166,162 @@
                                  
                                 </select>
                                 <input type="file" name="Video" class="form-control m-3" id="">
+                                <div class="mt-5 ">
+                                    <a href="#"><button class="btn btn-info ">Add</button></a>                                
+                                   </div>
+    
+                           </form>
+                           
+                        </div>
+                        
 
-            
-                                <div class="Slogen mt-4">
-                            
-                                    <div class="mt-5 ">
-                                        <a href="#"><button class="btn ">Upload</button></a>
-                                        
-                                       </div>
-                             
-                               </div>
-                            </form>
-                          
+                    </div>
                   
-                      </div>
- 
- 
-                     
-                 </div>
-               
- 
-                 <hr>
-             </section>
 
+                    <div id="DeleteVideo" class=" vh-100 col-md-12">
+                        
+                        <div class="">
+                            <h3 class="p-3"><i class="fa-solid fa-video"></i> Delete Video</h3>
 
-
-             <section id="Teacher" class=" vh-100">
-                <div class="container "> 
-                 
-                    <div class=" p-5 ">
-                        <div class=" d-flex flex-column">
-
-                           <h3 class="p-3"><i class="fa-solid fa-user-tie"></i> Add Teacher </h3>
-
-                           <form class=" d-flex flex-column p-5 justify-content-between">
-
-                            <input type="text" value="Name" class="form-control m-3"> 
-
-                              
-                               <select name="Grade" id="Select" class=" form-select m-3 ">
-                                   <option class="text-opacity-25" value="_____">_ Grade _</option>
-                                   <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
-                                   <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
-                                   <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
-           
-                                   <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
-                                   <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
-                                   <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
-                               </select>
-
-                               <select name="Subject" id="Select" class="m-3 form-select  ">
-                                   <option class="text-opacity-25" value="_____">_Subject _</option>
-                                   <option value="Grade 1 ">Math</option>
-                                   <option value="Grade 1 ">bio</option>
-                                   <option value="Grade 1 ">Arabic</option>
-                                   <option value="Grade 1 ">English</option>
-                               </select>
-
-
-           
-                               <div class="Slogen mt-4">
-                           
-                                   <div class="mt-5 ">
-                                       <a href="#"><button class="btn ">Add</button></a>
-                                       <a href="#"><button class="btn ">Delete</button></a>
-
-                                       
-                                      </div>
-                                      
-                            
-                              </div>
-                           </form>
-                         
-                 
-                     </div>
-
-
-                    
-                </div>
-              
-
-                <hr>
-            </section>
-
-
+                            <form class=" d-flex flex-column p-5 justify-content-between">
+                                <select name="Grade" id="Select" class=" form-select m-3 ">
+                                    <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                    <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                    <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                    <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
             
-            <section id="Users" class=" vh-100">
-                <div class="container "> 
-                 
-                    <div class=" p-5 ">
-                        <div class=" d-flex flex-column">
-
-                           <h3 class="p-3"><i class="fa-solid fa-user-check"></i> Manage Users </h3>
-
-                           <form class=" d-flex flex-column p-5 justify-content-between">
-
-                            <input type="text" value="Name" class="form-control m-3"> 
-
-                            <input type="email" value="Email" class="form-control m-3"> 
-
-
-                              
-                               <select name="Grade" id="Select" class=" form-select m-3 ">
-                                   <option class="text-opacity-25" value="_____">_ Grade _</option>
-                                   <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
-                                   <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
-                                   <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
-           
-                                   <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
-                                   <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
-                                   <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
-                               </select>
-
-
-           
-                               <div class="Slogen mt-4">
-                           
-                                   <div class="mt-5 ">
-                                       <a href="#"><button class="btn ">Add</button></a>
-                                       <a href="#"><button class="btn ">Delete</button></a>
-
-                                       
-                                      </div>
-                                      
-                            
-                              </div>
+                                    <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                    <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                    <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                                </select>
+    
+                                <select name="Subject" id="Select" class="m-3 form-select  ">
+                                    <option class="text-opacity-25" value="_____">_Subject _</option>
+                                    <option value="Grade 1 ">Math</option>
+                                    <option value="Grade 1 ">bio</option>
+                                    <option value="Grade 1 ">Arabic</option>
+                                    <option value="Grade 1 ">English</option>
+                                </select>
+    
+                                <select name="teacher" id="Select" class="m-3 form-select ">
+                                    <option class="text-opacity-25" value="_____">_ Teacher_</option>
+                                    <option value="Grade 1 ">Teacher 1</option>
+                                    <option value="Grade 1 ">Teacher 2</option>
+                                    <option value="Grade 1 ">Teacher 3</option>
+        
+                                </select>
+    
+                                <select name="Semester" id="Select" class="m-3 form-select ">
+                                    <option class="text-opacity-25" value="_____">_ Semester</option>
+                                    <option value="Grade 1 ">Semester 1</option>
+                                    <option value="Grade 1 ">semester 2</option>
+                                 
+                                </select>
+                                <input type="url" name="Video" value="Video URL" class="form-control m-3" id="">
+                                <div class="mt-5 ">
+                                    <a href="#"><button class="btn btn-danger ">Delete</button></a>                                
+                                   </div>
+    
                            </form>
-                         
-                 
-                     </div>
+                           
+                        </div>
+                        
 
+                    </div>
+            
 
-                    
-                </div>
-              
+                    <div id="AddUsers" class=" vh-100 col-md-12">
+                        
+                        <div class="">
+                            <h3 class="p-3"><i class="fa-solid fa-user"></i> Add User</h3>
 
-                <hr>
-            </section>
+                            <form class=" d-flex flex-column p-5 justify-content-between">
 
-
-
-            <section id="Admin" class=" vh-100">
-                <div class="container "> 
-                 
-                    <div class=" p-5 ">
-                        <div class=" d-flex flex-column">
-
-                           <h3 class="p-3"><i class="fa-solid fa-user-tie"></i> Manage Admins </h3>
-
-                           <form class=" d-flex flex-column p-5 justify-content-between">
-
-                            <input type="text" value="Name" class="form-control m-3"> 
-
-                            <input type="email" value="Email" class="form-control m-3"> 
-
-
-                              
-                               <select name="Grade" id="Select" class=" form-select m-3 ">
-                                   <option class="text-opacity-25" value="_____">_ Roles _</option>
-                                   <option value="Grade 1 ">Role 1</option>
-                                   <option value="Grade 1 ">Role 2</option>
-                                   <option value="Grade 1 ">Role 3</option>
-           
+                                <input type="text" value="Name" class="form-control m-3"> 
+    
+                                <input type="email" value="Email" class="form-control m-3"> 
+    
+    
+                                  
+                                   <select name="Grade" id="Select" class=" form-select m-3 ">
+                                       <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                       <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                       <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                       <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
+               
+                                       <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                       <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                       <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                                   </select>
+    
+    
+               
+                                   <div class="Slogen mt-4">
+                               
+                                       <div class="mt-5 ">
+                                           <a href="#"><button class="btn ">Add</button></a>                                           
+                                          </div>
+                                          
                                 
-                               </select>
-
-
-           
-                               <div class="Slogen mt-4">
+                                  </div>
+                               </form>
+                             
                            
-                                   <div class="mt-5 ">
-                                       <a href="#"><button class="btn ">Add</button></a>
-                                       <a href="#"><button class="btn ">Delete</button></a>
+                        </div>
+                        
 
-                                       
-                                      </div>
-                                      
-                            
-                              </div>
-                           </form>
-                         
-                 
-                     </div>
-
-
+                    </div>
                     
-                </div>
-              
+               
+                    <div id="DeleteUser" class=" vh-100 col-md-12">
+                        
+                        <div class="">
+                            <h3 class="p-3"><i class="fa-solid fa-delete-left"></i> Delete User</h3>
 
-                <hr>
-            </section>
- 
-          
- 
-        
-        
- 
-     </main>
+                            <form class=" d-flex flex-column p-5 justify-content-between">
 
+                                <input type="text" value="Name" class="form-control m-3"> 
+    
+                                <input type="email" value="Email" class="form-control m-3"> 
+    
+    
+                                  
+                                   <select name="Grade" id="Select" class=" form-select m-3 ">
+                                       <option class="text-opacity-25" value="_____">_ Grade _</option>
+                                       <option value="Grade 1 ">Grade 7(اولي اعدادي)</option>
+                                       <option value="Grade 1 ">Grade 8 (تانيه اعدادي)</option>
+                                       <option value="Grade 1 ">Grade 9 (تالته اعدادي)</option>
+               
+                                       <option value="Grade 1 "> Grade 10(اولي ثانوي)</option>
+                                       <option value="Grade 1 ">Grade 11(تانيه ثانوي)</option>
+                                       <option value="Grade 1 ">Grade 12(تالته ثانوي)</option>
+                                   </select>
+    
+    
+               
+                                   <div class=" mt-4">
+                               
+                                       <div class="mt-5 ">
+                                           <a href="#"><button class="btn btn-danger ">Delete</button></a>                                           
+                                          </div>
+                                          
+                                
+                                  </div>
+                               </form>
+                             
+                           
+                        </div>
+                        
 
+                    </div>
+                
+                    
+                </div> 
+            </div> 
 
-
+        </div> 
+    </div> 
+     
 
 
 
